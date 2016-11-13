@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [webdriver suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testhouse.webdriver.testscripts">
+        <methods>
+          <include name="webdrivertest"/>
+          <include name="browserIn"/>
+          <include name="browserIn"/>
+          <include name="browserOut"/>
+        </methods>
+      </class> <!-- com.testhouse.webdriver.testscripts -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [webdriver suite] -->

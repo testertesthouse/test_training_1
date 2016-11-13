@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="webdriver suite" duration-ms="18991" started-at="2016-11-13T05:16:31Z" finished-at="2016-11-13T05:16:50Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="18930" started-at="2016-11-13T05:16:31Z" finished-at="2016-11-13T05:16:50Z">
+      <class name="com.testhouse.webdriver.testscripts">
+        <test-method status="PASS" signature="browserIn(java.lang.String)[pri:0, instance:com.testhouse.webdriver.testscripts@511baa65]" name="browserIn" is-config="true" duration-ms="7315" started-at="2016-11-13T10:46:31Z" finished-at="2016-11-13T10:46:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIn -->
+        <test-method status="PASS" signature="webdrivertest()[pri:0, instance:com.testhouse.webdriver.testscripts@511baa65]" name="webdrivertest" duration-ms="9610" started-at="2016-11-13T10:46:39Z" finished-at="2016-11-13T10:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webdrivertest -->
+        <test-method status="PASS" signature="browserOut()[pri:0, instance:com.testhouse.webdriver.testscripts@511baa65]" name="browserOut" is-config="true" duration-ms="1987" started-at="2016-11-13T10:46:48Z" finished-at="2016-11-13T10:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserOut -->
+      </class> <!-- com.testhouse.webdriver.testscripts -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="16" started-at="2016-11-13T05:16:50Z" finished-at="2016-11-13T05:16:50Z">
+      <class name="com.testhouse.webdriver.testscripts">
+        <test-method status="FAIL" signature="browserIn(java.lang.String)[pri:0, instance:com.testhouse.webdriver.testscripts@566776ad]" name="browserIn" is-config="true" duration-ms="0" started-at="2016-11-13T10:46:50Z" finished-at="2016-11-13T10:46:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at com.testhouse.webdriver.GeneralFunctions.browserIn(GeneralFunctions.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIn -->
+        <test-method status="SKIP" signature="webdrivertest()[pri:0, instance:com.testhouse.webdriver.testscripts@566776ad]" name="webdrivertest" duration-ms="1" started-at="2016-11-13T10:46:50Z" finished-at="2016-11-13T10:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webdrivertest -->
+        <test-method status="SKIP" signature="browserOut()[pri:0, instance:com.testhouse.webdriver.testscripts@566776ad]" name="browserOut" is-config="true" duration-ms="0" started-at="2016-11-13T10:46:50Z" finished-at="2016-11-13T10:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserOut -->
+      </class> <!-- com.testhouse.webdriver.testscripts -->
+    </test> <!-- Test2 -->
+  </suite> <!-- webdriver suite -->
+</testng-results>

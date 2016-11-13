@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="webdriver suite" parallel="none">
+  <test name="Test1">
+  <parameter name = "browser" value = "chrome"/>
+  <classes>
+  <class name = "com.testhouse.webdriver.testscripts"/>
+  </classes>
+  </test> 
+  <!-- Test -->
+</suite> <!-- webdriver suite -->
